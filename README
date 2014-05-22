@@ -1,0 +1,15 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=4945
+
+Adds semantic highlighting to C/C++ symbols
+
+Details
+
+Assigns the color of a C/C++ symbol using the hash of the symbol string as a key to a color table that spans the line between minimum and maximum hue. Color table customizable by editing script. Behavior of color assignment customizable by editing hash function.
+
+Known defects
+
+- The 'define' in a '#define' preprocessor definition may be incorrectly colorized.
+
+- The semantic parsing algorithm is approximately O(n). Where 'n' is the number of non-syntax symbols in a buffer. Large files may be slow to process on your machine.
+
+- Only available in gvim.
