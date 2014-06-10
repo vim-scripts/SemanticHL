@@ -227,8 +227,6 @@ autocmd BufWritePost * call SemHL_Init()
 autocmd InsertChange * call SemHL_HighlightView()
 autocmd InsertEnter * call SemHL_HighlightView()
 autocmd InsertLeave * call SemHL_HighlightView()
-autocmd CursorMovedI * call SemHL_HighlightView()
-autocmd CursorMoved * call SemHL_HighlightView()
 autocmd CursorHold * call SemHL_OnTimeout()
 autocmd CursorHoldI * call SemHL_OnTimeout()
 
